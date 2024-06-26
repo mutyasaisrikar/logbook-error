@@ -1,15 +1,8 @@
 package com.example.logbookerror;
 
-import static java.net.URLDecoder.decode;
-import static java.util.Optional.ofNullable;
-
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.jayway.jsonpath.JsonPath;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
@@ -19,6 +12,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.List;
+
+import static java.net.URLDecoder.decode;
+import static java.util.Optional.ofNullable;
 
 @Configuration
 @RequiredArgsConstructor
